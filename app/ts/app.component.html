@@ -1,0 +1,6 @@
+<h1>{{ mainHeading }}</h1>
+<playlist [videos]="videos" (onSelectedVideo)="onVideoSelected($event)"></playlist>
+<button type="button" class="btn btn-primary" (click)="shlokList()">Shlok's List</button>
+<button type="button" class="btn btn-success" (click)="momList()">Mom's List</button>
+<br>
+<videoplayer [video]="video"></videoplayer>
